@@ -1,6 +1,7 @@
+package Questions;
+
 import java.util.*;
 import java.util.HashMap;
-import java.util.stream.Collectors;
 
 public class recapOne {
 
@@ -344,6 +345,17 @@ public class recapOne {
         System.out.println(map);
     }
 
+    public static void bonus(){
+
+        int[] arr = {12,34,56,78};
+
+        long count = String.valueOf(arr)
+                .chars()
+                .filter(n -> Arrays.stream(arr)
+                                .sum() > 10)
+                .count();
+        System.out.println(count);
+    }
 
 
     //After this

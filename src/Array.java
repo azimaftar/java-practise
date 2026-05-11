@@ -16,38 +16,6 @@ class Array {
         System.out.println(max);
     }
 
-    public static void findMaxx(){
-
-        int[] name = {1,2,3,4,5,6};
-
-        int high = Arrays.stream(name)
-                .max()
-                .getAsInt();
-
-        System.out.println(high);
-    }
-
-    public static void findMaxxx() {
-
-        int[] all = {2, 3, 4, 5, 6, 7, 8};
-
-        int highest = Arrays.stream(all)
-                .max()
-                .getAsInt();
-
-        System.out.println(highest);
-    }
-
-    public static void findMaxxxx(){
-        int [] alll = {12,15,55,66,45,97};
-
-        int highest = Arrays.stream(alll)
-                .max()
-                .getAsInt();
-
-        System.out.println(highest);
-    }
-
     public static void countEven(){
 
         int[] arr = {1, 2, 3, 4, 5, 6};
@@ -59,38 +27,6 @@ class Array {
         System.out.println(count);
     }
 
-    public static void countEvenn(){
-        int[] num = {1,3,4,5,6,7,8,9,11,223,43};
-
-        long count = Arrays.stream(num)
-                .filter(n -> n % 2 == 0)
-                .count();
-
-        System.out.println(count);
-    }
-
-    public static  void countEvennn(){
-        int[] num = {1,2,3,4,5,6,7,8,9,12};
-
-
-        long counter = Arrays.stream(num)
-                .filter(n -> n % 2 == 0)
-                .count();
-
-        System.out.println(counter);
-    }
-
-    public static void countEvennnn(){
-
-        int [] arr = {1,2,3,4,5,6,5};
-
-        long couter = Arrays.stream(arr)
-                .filter(n -> n %2==0)
-                .count();
-
-        System.out.println(couter);
-
-    }
 
 
     public static  void reverse(){
@@ -104,28 +40,6 @@ class Array {
         System.out.println(Integer.parseInt(reversed));
     }
 
-    public static void reversee(){
-        int arr = 12345;
-
-        String reverse = new StringBuilder(String.valueOf(arr))
-                .reverse()
-                .toString();
-
-        System.out.println(Integer.parseInt(reverse));
-    }
-
-    public static void reverseee(){
-
-        int arr = 123456;
-
-
-        String reverse = new StringBuilder(String.valueOf(arr))
-                .reverse()
-                .toString();
-
-        System.out.println(Integer.parseInt(reverse));
-    }
-
     public static void getSum(){
 
         int num = 123;
@@ -136,30 +50,6 @@ class Array {
                 .sum();
 
         System.out.println(sum);
-    }
-
-    public static void getSumm(){
-
-        int num = 22345;
-
-        int sum = String.valueOf(num)
-                .chars()
-                .map(Character::getNumericValue)
-                .sum();
-
-        System.out.println(sum);
-    }
-
-    public static void gtSummm(){
-
-        int all = 12345678;
-
-        int nw = String.valueOf(all)
-                .chars()
-                .map(Character::getNumericValue)
-                .sum();
-
-        System.out.println(nw);
     }
 
     //Test 1
@@ -377,8 +267,6 @@ class Array {
                         .sum() %2 ==0)
                 .count();
     }
-
-
 }
 
 
