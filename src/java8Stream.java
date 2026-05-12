@@ -286,7 +286,7 @@ public class java8Stream {
         List<Character> chaa = listr.stream()
                 .flatMap(n -> n.chars()
                         .mapToObj(c -> (char)c))
-                .filter(m -> m.equals('a') || m.equals('e') || m.equals('i') ||| m.equals('o') || m.equals('u'))
+                .filter(m -> m.equals('a') || m.equals('e') || m.equals('i') || m.equals('o') || m.equals('u'))
                 .collect(Collectors.toList());
         System.out.println(chaa);
 
