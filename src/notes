@@ -2,3 +2,33 @@ Challenging Topic
 
 1.words or number frequency ( String Handling/ Map)
 2.count amount of a word or number presence (String Handling/ Map)
+
+
+| Order | Main Topic                        | Status |
+| ----- | --------------------------------- | ------ |
+| 1     | Arrays                            | ✅ Done |
+| 2     | Streams Basics                    | ✅ Done |
+| 3     | List                              | ✅ Done |
+| 4     | Set                               | ✅ Done |
+| 5     | Match Operations                  | ✅ Done |
+| 6     | HashMap                           | ✅ Done |
+| 7     | String                            | ✅ Done |
+| 8     | Mixed Practice                    | ✅ Done |
+| 9     | Intermediate Java 8 Streams       | ⏳ Next |
+| 10    | Advanced String + Stream Problems | ⏳      |
+| 11    | OOP (Object-Oriented Programming) | ⏳      |
+| 12    | Exception Handling                | ⏳      |
+| 13    | File Handling                     | ⏳      |
+| 14    | Generics                          | ⏳      |
+| 15    | Collections Deep Dive             | ⏳      |
+| 16    | Multithreading                    | ⏳      |
+| 17    | JDBC                              | ⏳      |
+| 18    | Maven / Gradle                    | ⏳      |
+| 19    | Spring Boot                       | ⏳      |
+| 20    | Database + JPA/Hibernate          | ⏳      |
+| 21    | REST API Development              | ⏳      |
+| 22    | Security + JWT                    | ⏳      |
+| 23    | Testing (JUnit + Mockito)         | ⏳      |
+| 24    | System Design Basics              | ⏳      |
+
+

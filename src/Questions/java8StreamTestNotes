@@ -1,0 +1,234 @@
+// ==========================================
+// JAVA 8 STREAMS — INTERMEDIATE (CORRECTED)
+// ==========================================
+
+✔ 1. Stream Basics (filter, map, collect, forEach) — DONE
+✔ 2. Primitive Streams (mapToInt, mapToLong, mapToDouble) — DONE
+✔ 3. Sorting (sorted, Comparator basics) — DONE
+✔ 4. Distinct (remove duplicates) — DONE
+✔ 5. flatMap (nested lists / strings flattening) — DONE
+✔ 6. Match Operations (anyMatch, allMatch, noneMatch) — DONE
+✔ 7. findFirst / findAny —  DONE
+✔ 8. limit / skip —  DONE
+✔ 9. reduce() —  DONE
+✔ 10. Collectors Basics (toList, toSet, toMap) — DONE
+⚠ 11. Collectors Deep Dive — NOT DONE
+    - groupingBy advanced usage
+    - partitioningBy
+    - joining
+    - downstream collectors (mapping, counting, summingInt)
+✔ 12. groupingBy (basic frequency counting) — DONE
+⚠ 13. Optional with Streams — NOT DONE
+    - orElse, orElseGet, orElseThrow
+    - OptionalInt, Optional<String>
+⚠ 14. toMap() Advanced Usage — NOT DONE
+    - handling duplicate keys
+    - merge functions
+
+// ==========================================
+// SECTION 1 — ARRAY + STREAM BASICS
+// ==========================================
+
+// 1. Count total elements in array
+// 2. Sum all odd numbers
+// 3. Find maximum number
+// 4. Find minimum number
+// 5. Count numbers greater than 5
+// 6. Remove duplicate numbers
+// 7. Sort numbers ascending
+// 8. Sort numbers descending
+// 9. Multiply every number by 2
+// 10. Count numbers divisible by 2 and 3
+
+
+// ==========================================
+// SECTION 2 — DISTINCT + SORTING + MAPPING
+// ==========================================
+
+// 1. Count distinct numbers
+// 2. Sum distinct numbers
+// 3. Find maximum distinct number
+// 4. Find minimum distinct number
+// 5. Get all even numbers
+// 6. Get all odd numbers
+// 7. Sort distinct numbers descending
+// 8. Count numbers between 3 and 10
+// 9. Multiply every number by 10
+// 10. Convert integers to strings
+
+
+// ==========================================
+// SECTION 3 — MATCH FUNCTIONS
+// ==========================================
+
+// anyMatch()
+// allMatch()
+// noneMatch()
+
+// 1. Check if any number is greater than 8
+// 2. Check if all numbers are even
+// 3. Check if no numbers are negative
+// 4. Check if any number is divisible by 5
+// 5. Check if all numbers are positive
+
+
+// ==========================================
+// SECTION 4 — FLATMAP STRING + SORTING
+// ==========================================
+
+// 1. Flatten all characters from words
+// 2. Sort all characters descending
+// 3. Sort words by length ascending
+// 4. Sort words by length descending
+// 5. Get characters from words containing "a"
+// 6. Convert all words to uppercase
+// 7. Append "DEV-" to every word
+// 8. Get length of every word
+// 9. Replace "java" with "backend"
+// 10. Count words with length greater than 4
+
+
+// ==========================================
+// SECTION 5 — FLATMAP NUMBER LISTS
+// ==========================================
+
+// 1. Flatten nested integer lists
+// 2. Sum all numbers
+// 3. Count total numbers
+// 4. Find maximum number
+// 5. Get all even numbers
+// 6. Multiply every number by 2
+// 7. Sort all numbers descending
+// 8. Remove duplicate numbers
+// 9. Count numbers greater than 3
+// 10. Find minimum number
+
+
+// ==========================================
+// SECTION 6 — FLATMAP CHARACTER PROCESSING
+// ==========================================
+
+// 1. Convert all words into character list
+// 2. Count total characters
+// 3. Get all vowels
+// 4. Convert all characters to uppercase
+// 5. Sort all characters ascending
+// 6. Count occurrences of character 'a'
+// 7. Remove duplicate characters
+// 8. Get all consonants
+// 9. Count total vowels
+// 10. Sort all characters descending
+
+
+// ==========================================
+// SECTION 7 — GROUPINGBY()
+// ==========================================
+
+// ----- STRING: "programming" -----
+
+// 1. Count character frequency
+// 2. Print duplicate characters
+// 3. Print unique characters
+// 4. Count vowel frequency
+// 5. Find most frequent character
+
+
+// ----- LIST: ["java","api","java","spring","api","boot"] -----
+
+// 6. Count word frequency
+// 7. Print duplicate words
+// 8. Print unique words
+// 9. Find most frequent word
+// 10. Count words containing "a"
+
+
+// ==========================================
+// SECTION 8 — REAL INTERVIEW STRING PROBLEMS
+// ==========================================
+
+// 1. Reverse string
+// 2. Check palindrome
+// 3. Count vowels
+// 4. Count consonants
+// 5. Remove duplicate characters
+// 6. Sort characters alphabetically
+// 7. Find first repeating character
+// 8. Find first non-repeating character
+// 9. Print duplicate characters only
+// 10. Print unique characters only
+
+
+==========================================
+    SECTION - 9 FINDANY + FINDALL
+==========================================
+
+1. Find first element in list
+2. Find any element in list
+3. Find first number greater than 5
+4. Find any number greater than 5
+5. Find first even number
+6. Find any even number
+7. Find first number after sorting ascending
+8. Find any number divisible by 3
+9. Find first number greater than 10 (handle empty safely)
+10. Find any number after filtering numbers > 4
+
+==========================================
+    SECTION - 10 LIMIT +  SKIP
+==========================================
+1. Get first 5 numbers
+2. Skip first 3 numbers
+3. Skip first 5 and take next 3
+4. Get first 2 even numbers
+5. Skip first 4 odd numbers
+6. Sort descending and take first 3
+7. Multiply by 2 and take first 5
+8. Skip first 2 and count remaining numbers
+9. Skip first 3 and find first number
+10. Get top 4 largest numbers
+
+==========================================
+    SECTION - 11 REDUCE
+==========================================
+1. Find sum using reduce
+2. Find multiplication using reduce
+3. Find maximum using reduce
+4. Find minimum using reduce
+5. Find sum of even numbers using reduce
+6. Multiply all odd numbers
+7. Add 10 to every number then reduce sum
+8. Find total count using reduce
+9. Find sum using initial value 100
+10. Convert all numbers into single string
+
+
+// ==========================================
+// JAVA 8 STREAMS — ADVANCED TOPICS
+// ==========================================
+
+⚠ 1. reduce() Advanced Usage (custom aggregation) — NOT DONE
+⚠ 2. Collectors Deep Dive (downstream collectors) — NOT DONE
+⚠ 3. groupingBy Advanced (multi-level grouping) — NOT DONE
+⚠ 4. toMap() Advanced (handling duplicate keys, merge logic) — NOT DONE
+⚠ 5. partitioningBy (true/false complex grouping) — NOT DONE
+⚠ 6. joining() Advanced (delimiter, prefix, suffix) — NOT DONE
+
+⚠ 7. Comparator Advanced Sorting
+    - multi-field sorting
+    - custom comparator logic — PARTIAL (basic done)
+
+⚠ 8. Stream Pipelining (complex chaining operations) — PARTIAL
+✔ 9. Map + Stream Hybrid Operations (entrySet processing) — DONE
+✔ 10. flatMap Advanced (nested structures, deep flattening) — DONE
+
+⚠ 11. Optional with Streams
+    - orElse, orElseGet, orElseThrow — NOT DONE
+
+⚠ 12. findFirst / findAny (real interview usage) — NOT DONE
+⚠ 13. limit / skip (pagination logic) — NOT DONE
+
+⚠ 14. Parallel Streams
+    - parallel()
+    - performance trade-offs — NOT DONE
+
+⚠ 15. Performance & Lazy Evaluation Concepts — NOT DONE

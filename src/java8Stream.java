@@ -1,4 +1,5 @@
 import javax.swing.plaf.OptionPaneUI;
+import javax.swing.text.html.Option;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -319,4 +320,88 @@ public class java8Stream {
         System.out.println(jaua);
     }
 
+    public static void testingGrouping(){
+
+        String word = "banana";
+
+        Map<Character, Long> map = word.chars()
+                .mapToObj(c -> (char)c)
+                .collect(Collectors.groupingBy(
+                        c -> c,
+                        Collectors.counting()
+                ));
+        System.out.println(map);
+    }
+
+    public static void testingFindFirst(){
+
+        List<Integer> list = Arrays.asList(3, 7, 2, 9, 5, 6, 8);
+
+        Optional<Integer> optionalInt = list.stream()
+                .filter(n -> n > 5)
+                .findFirst();
+        System.out.println(optionalInt.orElse(-1));
+
+        Optional<Integer> integer = list.stream()
+                .filter(n -> n > 5)
+                .findAny();
+        System.out.println(integer.orElse(-1));
+    }
+
+    public static void testingSkipAndLimit(){
+
+        List<Integer> list =
+                Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+
+        List<Integer> skip1 = list.stream()
+                .limit(3)
+                .collect(Collectors.toList());
+        System.out.println(skip1);
+
+        List<Integer> skip2 = list.stream()
+                .skip(5)
+                .collect(Collectors.toList());
+        System.out.println(skip2);
+
+        List<Integer> skip3 = list.stream()
+                .skip(5)
+                .limit(3)
+                .collect(Collectors.toList());
+        System.out.println(skip3);
+
+    }
+
+    public static void  testingReduce(){
+
+        List<Integer> list =
+                Arrays.asList(1,2,3,4,5);
+
+        Optional<Integer> sum = list.stream()
+                .reduce(Integer::sum);
+        System.out.println(sum.orElse(0));
+
+        Optional<Integer> mult = list.stream()
+                .reduce((a,b) ->  a * b);
+        System.out.println(mult.orElse(0));
+
+        Optional<Integer> max = list.stream()
+                .reduce((a,b) -> a > b ? a : b);
+        System.out.println(max.orElse(0));
+
+        Optional<Integer> min = list.stream()
+                .reduce((a,b) -> a < b ? a :b);
+        System.out.println(min.orElse(0));
+
+        List<String> list1 =
+                Arrays.asList("java","spring","boot");
+
+        Optional<String> concat =  list1.stream()
+                .reduce((a,b) -> a + "-" + b);
+        System.out.println(concat.orElse(""));
+
+        Optional<String> longest = list1.stream()
+                .reduce((a,b) -> a.length() > b.length() ? a :b);
+        System.out.println(longest.orElse(""));
+
+    }
 }
