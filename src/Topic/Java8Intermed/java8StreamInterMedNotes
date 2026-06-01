@@ -12,16 +12,16 @@
 ✔ 8. limit / skip —  DONE
 ✔ 9. reduce() —  DONE
 ✔ 10. Collectors Basics (toList, toSet, toMap) — DONE
-⚠ 11. Collectors Deep Dive — NOT DONE
+✔ 11. Collectors Deep Dive —  DONE
     - groupingBy advanced usage
     - partitioningBy
     - joining
     - downstream collectors (mapping, counting, summingInt)
 ✔ 12. groupingBy (basic frequency counting) — DONE
-⚠ 13. Optional with Streams — NOT DONE
+✔ 13. Optional with Streams —  DONE
     - orElse, orElseGet, orElseThrow
     - OptionalInt, Optional<String>
-⚠ 14. toMap() Advanced Usage — NOT DONE
+✔ 14. toMap() Advanced Usage —  DONE
     - handling duplicate keys
     - merge functions
 
@@ -201,34 +201,67 @@
 9. Find sum using initial value 100
 10. Convert all numbers into single string
 
+==========================================
+SECTION 12 - COLLECTORS DEEP DIVE
+==========================================
 
-// ==========================================
-// JAVA 8 STREAMS — ADVANCED TOPICS
-// ==========================================
+1. Convert list to Set
+2. Count total elements using Collectors.counting()
+3. Find average of numbers
+4. Get summary statistics
+5. Partition even and odd numbers
+6. Get only distinct numbers using Set
+7. Count even numbers
+8. Sum all numbers using summarizingInt()
+9. Find max using summarizingInt()
+10. Find min using summarizingInt()
+11. Join words using "-"
+12. Join words using ","
+13. Convert words into Set
+14. Count total words
+15. Partition words by length > 4
 
-⚠ 1. reduce() Advanced Usage (custom aggregation) — NOT DONE
-⚠ 2. Collectors Deep Dive (downstream collectors) — NOT DONE
-⚠ 3. groupingBy Advanced (multi-level grouping) — NOT DONE
-⚠ 4. toMap() Advanced (handling duplicate keys, merge logic) — NOT DONE
-⚠ 5. partitioningBy (true/false complex grouping) — NOT DONE
-⚠ 6. joining() Advanced (delimiter, prefix, suffix) — NOT DONE
+==========================================
+SECTION 13 — QUESTIONS ONLY (toMap)
+==========================================
 
-⚠ 7. Comparator Advanced Sorting
-    - multi-field sorting
-    - custom comparator logic — PARTIAL (basic done)
+1. Convert list of integers to (number → square)
+2. Convert list of integers to (number → cube)
+3. Convert list of strings to (word → length)
+4. Convert list of strings to (word → uppercase word)
+5. Convert list of strings to (word → lowercase word)
+6. Convert list of numbers to (number → EVEN/ODD label)
+7. Create frequency map of characters from a string
+8. Create frequency map of words from a list (handle duplicates)
+9. Convert list to index-based map (value → index)
+10. Convert list of strings to (first character → word) using merge function
 
-⚠ 8. Stream Pipelining (complex chaining operations) — PARTIAL
-✔ 9. Map + Stream Hybrid Operations (entrySet processing) — DONE
-✔ 10. flatMap Advanced (nested structures, deep flattening) — DONE
+==========================================
+SECTION 14 — Optional with Streams
+==========================================
 
-⚠ 11. Optional with Streams
-    - orElse, orElseGet, orElseThrow — NOT DONE
+1. Find first number greater than 5
+2. Find first even number
+3. Find any odd number
+4. Find maximum number
+5. Find minimum number
+6. Find first number greater than 10, return -1 if not found
+7. Find any number divisible by 3
+8. Find first number after sorting ascending
+9. Find first number after sorting descending
+10. Print first even number using ifPresent()
 
-⚠ 12. findFirst / findAny (real interview usage) — NOT DONE
-⚠ 13. limit / skip (pagination logic) — NOT DONE
+==========================================
+INTERMEDIATE STREAMS — FINAL TEST
+==========================================
 
-⚠ 14. Parallel Streams
-    - parallel()
-    - performance trade-offs — NOT DONE
-
-⚠ 15. Performance & Lazy Evaluation Concepts — NOT DONE
+// 1. Filter numbers greater than 5
+// 2. Remove duplicates and sort numbers in descending order
+// 3. Multiply every number by 10
+// 4. Find sum of all numbers using reduce()
+// 5. Check if any number is divisible by 2 and 3
+// 6. Find first number greater than 5 (return -1 if not found)
+// 7. Skip first 2 numbers and take next 3 numbers
+// 8. Convert all words into characters using flatMap
+// 9. Convert words into map (word → length)
+// 10. Find character frequency using groupingBy from "programming"

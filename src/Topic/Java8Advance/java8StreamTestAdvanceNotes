@@ -1,0 +1,59 @@
+// ==========================================
+// JAVA 8 STREAMS — ADVANCED TOPICS
+// ==========================================
+
+✔ 1. reduce() Advanced Usage (custom aggregation) —  DONE
+✔ 2. Collectors Deep Dive (downstream collectors) —  DONE
+✔ 3. groupingBy Advanced (multi-level grouping) —  DONE
+✔ 4. toMap() Advanced (handling duplicate keys, merge logic) —  DONE
+✔ 5. partitioningBy (true/false complex grouping) —  DONE
+⚠ 6. joining() Advanced (delimiter, prefix, suffix) — NOT DONE
+
+⚠ 7. Comparator Advanced Sorting
+    - multi-field sorting
+    - custom comparator logic — PARTIAL (basic done)
+
+⚠ 8. Stream Pipelining (complex chaining operations) — PARTIAL
+✔ 9. Map + Stream Hybrid Operations (entrySet processing) — DONE
+✔ 10. flatMap Advanced (nested structures, deep flattening) — DONE
+
+✔ 11. Optional with Streams
+    - orElse, orElseGet, orElseThrow —  DONE
+
+✔ 12. findFirst / findAny (real interview usage) —  DONE
+✔ 13. limit / skip (pagination logic) —  DONE
+
+⚠ 14. Parallel Streams
+    - parallel()
+    - performance trade-offs — NOT DONE
+
+⚠ 15. Performance & Lazy Evaluation Concepts — NOT DONE
+
+
+==========================================
+SECTION 1 — ADVANCED groupingBy()
+==========================================
+// 1. Group numbers into EVEN and ODD
+// 2. Group numbers by remainder when divided by 3
+// 3. Group words by length
+// 4. Count how many words exist for each length
+// 5. Sum numbers grouped by EVEN and ODD
+// 6. Group words by first character
+// 7. Group words by length and convert values to uppercase
+// 8. Count frequency of each word using groupingBy
+// 9. Group numbers by EVEN and ODD, then count each group
+// 10. Group numbers by EVEN and ODD, then find maximum number in each group
+
+==========================================
+SECTION 2 — ADVANCED COMPARATOR
+==========================================
+// 1. Sort words by length ascending
+// 2. Sort words by length descending
+// 3. Sort words alphabetically
+// 4. Sort words alphabetically in reverse order
+// 5. Sort words by length, then alphabetically
+// 6. Sort numbers ascending
+// 7. Sort numbers descending
+// 8. Sort even numbers first, then odd numbers
+// 9. Sort odd numbers first, then even numbers
+// 10. Sort numbers by distance from 5

@@ -1,7 +1,6 @@
-import java.awt.image.CropImageFilter;
-import java.util.ArrayList;
+package Topic.AllListKind;
+
 import java.util.Arrays;
-import java.util.List;
 import java.util.OptionalInt;
 
 class Array {
